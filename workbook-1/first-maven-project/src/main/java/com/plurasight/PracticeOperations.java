@@ -25,7 +25,7 @@ public class PracticeOperations {
         System.out.println(accumulation);
         accumulation = accumulation + 1000;
         System.out.println(accumulation);
-                
+
 
     }
 }
