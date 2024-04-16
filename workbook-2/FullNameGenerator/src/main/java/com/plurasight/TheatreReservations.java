@@ -11,9 +11,12 @@ public class TheatreReservations {
         String [] name= fullName.split(" ");
         String firstName = name [0];
         String lastName = name [1];
-        System.out.println("What date will you be coming (MM/dd/yyyy");
+        System.out.println("What date will you be coming (MM/dd/yyyy)");
         String comingDate = scanner.nextLine();
         DateTimeFormatter
         formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
+        System.out.println("How many tickets would you like?");
+        int ticketNumber = scanner.nextInt();
+        System.out.println( ticketNumber + " tickets reserved for " + comingDate + " under " + name[1]+ ","+ name[0]);
     }
 }
