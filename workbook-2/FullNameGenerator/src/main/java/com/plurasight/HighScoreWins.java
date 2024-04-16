@@ -15,10 +15,10 @@ public class HighScoreWins {
         int homeScore = Integer.parseInt(score[2]);
         int visitorScore = Integer.parseInt(score[3]);
         if (homeScore > visitorScore) {
-            System.out.println(" The Winner is:" + home);
+            System.out.println(" The Winner is: " + home);
         }
         if (visitorScore > homeScore) {
-            System.out.println("The Winner is:" + visitor);}
+            System.out.println("The Winner is: " + visitor);}
             if ( visitorScore == homeScore) {
                 System.out.println("Tie");
             }
