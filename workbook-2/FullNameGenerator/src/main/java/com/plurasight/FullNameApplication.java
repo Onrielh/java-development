@@ -4,8 +4,10 @@ import java.util.Scanner;
 
 public class FullNameApplication {
     public static void main(String[] args) {
+        // new scanner
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Please Enter Your name, enter N/A if does not apply!");
+        System.out.println("Please Enter Your name!");
+        // defining variables
         System.out.print("First Name:");
         String firstName = scanner.nextLine();
         firstName = firstName.trim();
@@ -20,6 +22,7 @@ public class FullNameApplication {
         suffix = suffix.trim();
         String fullName = (firstName + " " + middleName + " " + lastName + "," + suffix);
         System.out.println(fullName);
+        // if statements for missing name components
         if (middleName.isEmpty()) {
             fullName = firstName + " " + lastName;
 

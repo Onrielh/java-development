@@ -8,7 +8,7 @@ public class FullNameParser {
         System.out.println("Please enter your name");
         String input = scanner.nextLine();
         String[] name = input.split(" ");
-
+// if statement if user doesnt have a middle name
         if (name.length == 2) {
             System.out.println("First Name:" + " " + name[0]);
             System.out.println("Middle Name: (none)");
