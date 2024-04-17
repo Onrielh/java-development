@@ -26,13 +26,15 @@ public class CellPhoneApplication {
         display(cp1);
         CellPhone cp2 = new CellPhone(serialNumber, model, carrier, phoneNumber, owner);
         display(cp2);
-
+     cp1.dial(cp2.getPhoneNumber());
+     cp2.dial(cp1.getPhoneNumber());
     }
    public static void display (CellPhone phone){
-    System.out.println(phone.getSerialNumber());
-    System.out.println(phone.getCarrier());
-    System.out.println(phone.getModel());
-    System.out.println(phone.getPhoneNumber());
-    System.out.println(phone.getOwner());
+    System.out.println("The Serial Number is "+ phone.getSerialNumber());
+    System.out.println("The Phone carrier is "+ phone.getCarrier());
+    System.out.println("The Phone Model is a " + phone.getModel());
+    System.out.println("The Phone Number is " + phone.getPhoneNumber());
+    System.out.println("The owner is " + phone.getOwner());
    }
+
 }
