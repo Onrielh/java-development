@@ -14,6 +14,7 @@ public class CellPhone {
             phoneNumber = "";
             owner = "";
         }
+        // create overload constructor
      public CellPhone(Long serialNumber, String model, String carrier, String phoneNumber, String owner) {
          this.serialNumber = serialNumber;
          this.model = model;
@@ -21,6 +22,7 @@ public class CellPhone {
          this.phoneNumber = phoneNumber;
          this.owner = owner;
      }
+     // setters
     public void  setSerialNumber(Long serialNumber) {
         this.serialNumber = serialNumber;
     }public void setModel(String model) {
@@ -32,7 +34,8 @@ public class CellPhone {
     }public void setOwner(String owner) {
         this.owner = owner;
     }
-    // setting getters
+
+    //  getters
     public Long getSerialNumber() {
         return serialNumber;
     }
@@ -48,6 +51,9 @@ public class CellPhone {
     public void dial( String phoneNumber){
         System.out.println(owner + "phone is calling"+ phoneNumber);
 
+    }
+    public void dial (CellPhone phone){
+        System.out.println(owner +""+"s phone is calling" + phone.phoneNumber);
     }
 }
 

@@ -29,12 +29,13 @@ public class CellPhoneApplication {
      cp1.dial(cp2.getPhoneNumber());
      cp2.dial(cp1.getPhoneNumber());
     }
-   public static void display (CellPhone phone){
+   public static void display(CellPhone phone){
     System.out.println("The Serial Number is "+ phone.getSerialNumber());
     System.out.println("The Phone carrier is "+ phone.getCarrier());
     System.out.println("The Phone Model is a " + phone.getModel());
     System.out.println("The Phone Number is " + phone.getPhoneNumber());
     System.out.println("The owner is " + phone.getOwner());
    }
+
 
 }
