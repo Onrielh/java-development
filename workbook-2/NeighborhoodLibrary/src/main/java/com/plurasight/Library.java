@@ -54,6 +54,10 @@ public class Library {
                 case 3:
                     exitprogam(books);
                     break;
+                default:
+                    System.out.println("Error! Please select one of the 3 options");
+                    backHome(books);
+                    break;
             }
     }
 // method to show user what books are currently available
@@ -62,7 +66,7 @@ public class Library {
             System.out.println("\tThese are the Available books");
             for (Book book : books)
                 if (book.getIsCheckedOut() == false) {
-                    System.out.println("Book Id:" + book.getId()+ "\t" +"Book Title:"+book.getTitle() + "\t" +"\t" + "ISBN:" + book.getIsbn());
+                    System.out.println("Book Id:" + book.getId() + "\t" + "ISBN:" + book.getIsbn()+"\t" +"Book Title:"+book.getTitle() );
                 }
     // switch case to call the user to got to checkout book method or return to home screen
             System.out.println("Select 1 to check out a book, select 2 to go back to the home screen?");
@@ -85,8 +89,8 @@ public class Library {
             int id = scanner.nextInt();
             if(!books[id].getIsCheckedOut()){
                 books[id].checkOut(userName);
-                System.out.println("You have Succesfully checked out the following book:\n" + "Book Id:" +books[id].getId() +
-                        " Book Title:" + books[id].getTitle() + " ISBN:" + books[id].getIsbn() + " is checked out to: " + books[id].getCheckedOutTo() );
+                System.out.println("You have Succesfully checked out the following book:\n" + "Book Id:" +books[id].getId() + " ISBN:" + books[id].getIsbn() +
+                        " Book Title:" + books[id].getTitle()  + " is checked out to: " + books[id].getCheckedOutTo() );
             }
             System.out.println("Please Select 1 to return to the Home Screen or 2 to Exit the Program");
             int choice = scanner.nextInt();
