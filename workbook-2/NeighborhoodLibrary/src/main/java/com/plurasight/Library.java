@@ -59,10 +59,10 @@ public class Library {
 // method to show user what books are currently available
         public static void showAvailable(Book[] books) {
             Scanner scanner = new Scanner(System.in);
-            System.out.println("These are the Available books");
+            System.out.println("\tThese are the Available books");
             for (Book book : books)
                 if (book.getIsCheckedOut() == false) {
-                    System.out.println(book);
+                    System.out.println("Book Id:" + book.getId()+ "\t" +"Book Title:"+book.getTitle() + "\t" +"\t" + "ISBN:" + book.getIsbn());
                 }
     // switch case to call the user to got to checkout book method or return to home screen
             System.out.println("Select 1 to check out a book, select 2 to go back to the home screen?");
@@ -76,7 +76,7 @@ public class Library {
                     break;
                  }
              }
-// checkout method, allows user to choose a bookand it shows the user that the book is now checked out to them
+// checkout method, allows user to choose a book and it shows the user that the book is now checked out to them
         public static void checkOutBook(Book[] books) {
             Scanner scanner =new Scanner(System.in);
             System.out.println("Please enter your name ");
