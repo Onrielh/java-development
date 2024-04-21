@@ -26,7 +26,7 @@ public class Book {
         this.checkedOutTo = checkedOutTo;
     }
     public String toString(){
-        return "Book id: " + id +", isbn:" + isbn + "  title:"+ title + " isCheckedOut: " + isCheckedOut + "  is checked out to " + checkedOutTo;}
+        return "Book id: " + id +", isbn:" + isbn + "  title:"+ title + " is Checked Out: " + isCheckedOut + "  is checked out to " + checkedOutTo;}
 
     public int getId() {
         return id;
